@@ -1,0 +1,17 @@
+{
+	"client": {
+		"brand": "Brand",
+		"contact": {
+			"firstName": "John",
+			"surname": "Doe"
+		},
+		"email": "john@taoscreative.com.au",
+		"phone": "+612 9700 9707",
+		
+		"accountManager": {
+			"name": "Ben",
+			"email": "ben@taoscreative.com.au",
+			"phone": "+612 9700 9707"
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "wipreport",
+  "version": "0.0.1",
+  "homepage": "https://github.com/thetanman/wipreport",
+  "authors": [
+    "Tan Vo <tan.m.vo@gmail.com>"
+  ],
+  "description": "WIP Report",
+  "main": "index.html",
+  "keywords": [
+    "tan",
+    "vo",
+    "bootstrap",
+    "less",
+    "portfolio",
+    "css",
+    "handlebars"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
