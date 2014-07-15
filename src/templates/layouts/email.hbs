@@ -62,24 +62,29 @@
 			/* Part one of controlling phone number linking for mobile. */
 			a[href^="tel"], a[href^="sms"] {
 						text-decoration: none;
-						color: blue; /* or whatever your want */
+						color: #FFFFFF; /* or whatever your want */
 						pointer-events: none;
 						cursor: default;
 					}
 
 			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
 						text-decoration: default;
-						color: orange !important;
+						color: #FFFFFF !important;
 						pointer-events: auto;
 						cursor: default;
 					}
 					
 			/* CSS Styles by github@thetanman */
-			table[class="m480"], td[class="m480"], img[class="m480"] {width: 100% !important; max-width: 480px !important;}
+			table[class="m480"], td[class="m480"] {width: 100% !important; max-width: 480px !important;}
+			img[class="m480"] {width: 100% !important; max-width: 480px !important; height: auto !important;}
+			table[id="card"] {border-radius: 3px !important;}
 			td[class="gutter"] {padding-left: 20px !important; padding-right: 20px !important;}
-			td[class="content"] {width: 100% !important; max-width: 480px !important; padding: 0px 20px !important;}
+			td[class="content"] {width: 100% !important; max-width: 480px !important; padding: 0px 20px !important; border-left: 2px solid #efefef; border-right: 2px solid #efefef;}
+			td[class="footer-content"] {width: 100% !important; max-width: 480px !important; padding: 0px 20px !important; border-left: 2px solid #17a4d8; border-right: 2px solid #17a4d8;}
 			*[class].hide {display: none !important;}
+			img[class="spacer"] {width: 100% !important; max-width: 480px !important;}
 			*[class].preheader {display: none !important;} /* Preheader removed from mobile version */
+			span[class="button"] {width: 240px !important; margin-right: auto !important; margin-left: auto !important; margin-bottom: 10px !important; display: inline-block !important; padding: 10px 20px !important; background-color: #99c739 !important; text-align: center !important; border-radius: 3px !important; border:1px solid #7ea613 !important;}
 		}
 
 		/* More Specific Targeting */
@@ -89,14 +94,14 @@
 			/* repeating for the ipad */
 			a[href^="tel"], a[href^="sms"] {
 						text-decoration: none;
-						color: blue; /* or whatever your want */
+						color: #FFFFFF; /* or whatever your want */
 						pointer-events: none;
 						cursor: default;
 					}
 
 			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
 						text-decoration: default;
-						color: orange !important;
+						color: #FFFFFF !important;
 						pointer-events: auto;
 						cursor: default;
 					}	
@@ -122,11 +127,16 @@
 		</style>
 	<![endif]-->
 </head>
-<body>
+<body bgcolor="#EFEFEF">
 <div class="preheader" height="1" style="display: none; height: 1px; font-size: 1px; line-height: 1px; color: #FFFFFF;">
  {{ preheader }}
 </div>
 <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+	<tr>
+		<td valign="top" height="20" style="font-size: 1px; line-height: 20px;" class="gutter"> 
+			&nbsp;
+		</td>
+	</tr>
 	<tr>
 		<td valign="top" class="gutter"> 
 			{{> body }}
@@ -134,7 +144,7 @@
 	</tr>
 	<tr>
 		<td valign="top" class="gutter"> 
-			{{> email-footer }}
+			{{> footer }}
 		</td>
 	</tr>
 </table>  

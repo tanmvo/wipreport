@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Welcome!</title>
+	<style type="text/css">
+		/* Based on The MailChimp Reset INLINE: Yes. */  
+		/* Client-specific Styles */
+		#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+		body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;} 
+		/* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/ 
+		.ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */  
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+		/* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */ 
+		#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+		/* End reset */
+
+		/* Some sensible defaults for images
+		Bring inline: Yes. */
+		img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;} 
+		a img {border:none;} 
+		.image_fix {display:block;}
+
+		/* Yahoo paragraph fix
+		Bring inline: Yes. */
+		p {margin: 1em 0;}
+
+		/* Hotmail header color reset
+		Bring inline: Yes. */
+		h1, h2, h3, h4, h5, h6 {color: black !important;}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: blue !important;}
+
+		h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+		color: red !important; /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+		}
+
+		h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+		color: purple !important; /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+		}
+
+		/* Outlook 07, 10 Padding issue fix
+		Bring inline: No.*/
+		table td {border-collapse: collapse;}
+
+		/* Remove spacing around Outlook 07, 10 tables
+		Bring inline: Yes */
+		table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+
+		/* Styling your links has become much simpler with the new Yahoo.  In fact, it falls in line with the main credo of styling in email and make sure to bring your styles inline.  Your link colors will be uniform across clients when brought inline.
+		Bring inline: Yes. */
+		a {color: blue;}
+
+
+		/***************************************************
+		****************************************************
+		MOBILE TARGETING
+		****************************************************
+		***************************************************/
+		@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
+			/* Part one of controlling phone number linking for mobile. */
+			a[href^="tel"], a[href^="sms"] {
+						text-decoration: none;
+						color: #FFFFFF; /* or whatever your want */
+						pointer-events: none;
+						cursor: default;
+					}
+
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+						text-decoration: default;
+						color: #FFFFFF !important;
+						pointer-events: auto;
+						cursor: default;
+					}
+					
+			/* CSS Styles by github@thetanman */
+			table[class="m480"], td[class="m480"] {width: 100% !important; max-width: 480px !important;}
+			img[class="m480"] {width: 100% !important; max-width: 480px !important; height: auto !important;}
+			table[id="card"] {border-radius: 3px !important;}
+			td[class="gutter"] {padding-left: 20px !important; padding-right: 20px !important;}
+			td[class="content"] {width: 100% !important; max-width: 480px !important; padding: 0px 20px !important; border-left: 2px solid #efefef; border-right: 2px solid #efefef;}
+			td[class="footer-content"] {width: 100% !important; max-width: 480px !important; padding: 0px 20px !important; border-left: 2px solid #17a4d8; border-right: 2px solid #17a4d8;}
+			*[class].hide {display: none !important;}
+			img[class="spacer"] {width: 100% !important; max-width: 480px !important;}
+			*[class].preheader {display: none !important;} /* Preheader removed from mobile version */
+			span[class="button"] {width: 240px !important; margin-right: auto !important; margin-left: auto !important; margin-bottom: 10px !important; display: inline-block !important; padding: 10px 20px !important; background-color: #99c739 !important; text-align: center !important; border-radius: 3px !important; border:1px solid #7ea613 !important;}
+		}
+
+		/* More Specific Targeting */
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* You guessed it, ipad (tablets, smaller screens, etc) */
+			/* repeating for the ipad */
+			a[href^="tel"], a[href^="sms"] {
+						text-decoration: none;
+						color: #FFFFFF; /* or whatever your want */
+						pointer-events: none;
+						cursor: default;
+					}
+
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+						text-decoration: default;
+						color: #FFFFFF !important;
+						pointer-events: auto;
+						cursor: default;
+					}	
+		}
+	</style>
+
+	<!-- Targeting Windows Mobile -->
+	<!--[if IEMobile 7]>
+	<style type="text/css">
+	
+	</style>
+	<![endif]-->   
+
+	<!-- ***********************************************
+	****************************************************
+	END MOBILE TARGETING
+	****************************************************
+	************************************************ -->
+
+	<!--[if gte mso 9]>
+		<style>
+		/* Target Outlook 2007 and 2010 */
+		</style>
+	<![endif]-->
+</head>
+<body bgcolor="#EFEFEF">
+<div class="preheader" height="1" style="display: none; height: 1px; font-size: 1px; line-height: 1px; color: #FFFFFF;">
+ Message in confidence
+</div>
+<table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+	<tr>
+		<td valign="top" height="20" style="font-size: 1px; line-height: 20px;" class="gutter"> 
+			&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="gutter"> 
+			
+<table cellpadding="0" cellspacing="0" border="0" class="m480" id="card" align="center" bgcolor="#FFFFFF">
+	<tr>
+		<td width="600" height="40" colspan="3" style="font-size: 1px; line-height: 40px; border-top: 2px solid #ECECEC; border-left: 2px solid #ECECEC; border-right: 2px solid #ECECEC" class="m480">
+			&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td width="20" style="font-size: 1px; line-height: 20px; border-left: 2px solid #ECECEC;" class="hide">
+			&nbsp;
+		</td>
+		<td width="560" height="15" style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; color: #888888; text-align: center; font-weight: bold;" class="content">
+			Your report is ready to download, Catherine :)
+			<table cellpadding="0" cellspacing="0" border="0" class="m480" align="center" bgcolor="#FFFFFF">
+				<tr>
+					<td width="15" height="15" style="font-size: 1px; line-height: 15px;" class="m480">
+						&nbsp;
+					</td>
+				</tr>
+			</table>
+			<div><!--[if mso]>
+			  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:38px;v-text-anchor:middle;width:200px;" arcsize="9%" strokecolor="#7ea613" fill="t">
+			    <v:fill type="tile" src="http://imgur.com/clZqdfM.gif" color="#99c739" />
+			    <w:anchorlock/>
+			    <center style="color:#ffffff;font-family:sans-serif;font-size:14px;font-weight:bold;">Download report</center>
+			  </v:roundrect>
+			<![endif]--><a href="http://"
+			style="background-color:#99c739;border:1px solid #7ea613;border-radius:none;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:14px;font-weight:bold;line-height:38px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;">Download report</a></div>
+		</td>
+		<td width="20" style="font-size: 1px; line-height: 20px; border-right: 2px solid #ECECEC;" class="hide">
+			&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td width="600" height="40" colspan="3" style="font-size: 1px; line-height: 40px; border-left: 2px solid #ECECEC; border-right: 2px solid #ECECEC;" class="m480">
+			&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td width="600" colspan="3" style="border-left: 2px solid #ECECEC; border-right: 2px solid #ECECEC;" class="m480-content">
+			<center><img src="../assets/img/report-sm.gif" width="400" height="200" border="0" style="display: block;" class="m480"></center>
+		</td>
+	</tr>
+</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="gutter"> 
+			<table cellpadding="0" cellspacing="0" border="0" class="480" align="center" bgcolor="#17a4d8">
+	<tr>
+		<td width="600" height="20" colspan="3" style="font-size: 1px; line-height: 20px; border-left: 2px solid  #ECECEC; border-right: 2px solid  #ECECEC" class="m480">
+			<img src="../assets/img/spacer.gif" width="600" height="1" border="0" alt="Image" style="display: block; max-width: 600px;" class="spacer" />
+		</td>
+	</tr>
+	<tr>
+		<td width="20" style="font-size: 1px; line-height: 20px; border-left: 2px solid  #ECECEC;" class="hide">
+			&nbsp;
+		</td>
+		<td width="560" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px; color: #FFFFFF;" class="content">
+			<span style="font-size: 18px; line-height: 26px; font-weight: bold;">Need assistance?</span>
+			<table cellpadding="0" cellspacing="0" border="0" class="m480" align="center" bgcolor="#17a4d8">
+				<tr>
+					<td width="15" height="5" style="font-size: 1px; line-height: 5px;" class="m480">
+						&nbsp;
+					</td>
+				</tr>
+			</table>
+			If there's anything you need help with or have any general inquiries then contact us on <strong>+612 9700 9707</strong> or send us an <a href="mailto:ben@taoscreative.com.au" style="color: #FFFFFF; font-weight: bold;">email</a>.
+			
+		</td>
+		<td width="20" style="font-size: 1px; line-height: 20px; border-right: 2px solid  #ECECEC;" class="hide">
+			&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td width="600" height="20" colspan="3" style="font-size: 1px; line-height: 20px; border-left: 2px solid  #ECECEC; border-right: 2px solid  #ECECEC;" class="m480">
+			&nbsp;
+		</td>
+	</tr>
+</table>
+
+
+		</td>
+	</tr>
+</table>  
+</body>
+</html>

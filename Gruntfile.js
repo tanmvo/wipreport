@@ -43,7 +43,22 @@ module.exports = function(grunt) {
 			},
 			livereload: true,
 		},
-		copy: {},
+		copy: {
+			img: {
+				expand: true,
+					cwd: 'assets/img/',
+					src: '*',
+					dest: 'dist/assets/img/',
+					flatten: true,
+			},
+			css: {
+				expand: true,
+					cwd: 'assets/css/',
+					src: '*',
+					dest: 'dist/assets/css/',
+					flatten: true,
+			}
+		},
 		less: {
 			development: {
 				options: {
@@ -60,7 +75,7 @@ module.exports = function(grunt) {
 					livereload: true,
 				},
 			hbs: {
-				files: ['001/*.hbs', 'email/*.hbs', 'templates/**/*.hbs'],
+				files: ['001/*.hbs', 'email/*.hbs', 'src/templates/**/*.hbs'],
 				tasks: ['assemble'],
 			},
 		},
@@ -75,5 +90,5 @@ module.exports = function(grunt) {
   	grunt.loadNpmTasks('grunt-contrib-watch');
   	// Default task to be run.
   	grunt.registerTask('default', ['clean', 'less', 'assemble']);
-  	grunt.registerTask('serve', ['clean', 'less', 'assemble', 'connect', 'watch']);
+  	grunt.registerTask('serve', ['clean', 'less', 'copy', 'assemble', 'connect', 'watch']);
 };

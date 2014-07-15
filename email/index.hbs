@@ -4,33 +4,46 @@ title: Welcome!
 preheader: Message in confidence
 brandColor: "#17a4d8"
 ---
-<table cellpadding="0" cellspacing="0" border="0" class="m480" align="center" bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" class="m480" id="card" align="center" bgcolor="#FFFFFF">
 	<tr>
-		<td width="600" height="20" colspan="3" style="font-size: 1px; line-height: 20px; border-top: 2px solid #EEEEEE; border-left: 2px solid #EEEEEE; border-right: 2px solid #efefef" class="m480">
+		<td width="600" height="40" colspan="3" style="font-size: 1px; line-height: 40px; border-top: 2px solid #ECECEC; border-left: 2px solid #ECECEC; border-right: 2px solid #ECECEC" class="m480">
 			&nbsp;
 		</td>
 	</tr>
 	<tr>
-		<td width="20" style="font-size: 1px; line-height: 20px; border-left: 2px solid #efefef;" class="hide">
+		<td width="20" style="font-size: 1px; line-height: 20px; border-left: 2px solid #ECECEC;" class="hide">
 			&nbsp;
 		</td>
-		<td width="560" height="15" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; color: #888888;" class="content">
-			Hi {{ client.name.firstName }},
-			<br><br>
-			
-			{{> partial }}
-
-			Contact:
-			{{ client.name.accountManager.name }}
-			{{ client.name.accountManager.phone }}
+		<td width="560" height="15" style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; color: #888888; text-align: center; font-weight: bold;" class="content">
+			Your report is ready to download, {{ client.contact.firstName }} :)
+			<table cellpadding="0" cellspacing="0" border="0" class="m480" align="center" bgcolor="#FFFFFF">
+				<tr>
+					<td width="15" height="15" style="font-size: 1px; line-height: 15px;" class="m480">
+						&nbsp;
+					</td>
+				</tr>
+			</table>
+			<div><!--[if mso]>
+			  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:38px;v-text-anchor:middle;width:200px;" arcsize="9%" strokecolor="#7ea613" fill="t">
+			    <v:fill type="tile" src="http://imgur.com/clZqdfM.gif" color="#99c739" />
+			    <w:anchorlock/>
+			    <center style="color:#ffffff;font-family:sans-serif;font-size:14px;font-weight:bold;">Download report</center>
+			  </v:roundrect>
+			<![endif]--><a href="http://"
+			style="background-color:#99c739;border:1px solid #7ea613;border-radius:none;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:14px;font-weight:bold;line-height:38px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;">Download report</a></div>
 		</td>
-		<td width="20" style="font-size: 1px; line-height: 20px; border-right: 2px solid #efefef;" class="hide">
+		<td width="20" style="font-size: 1px; line-height: 20px; border-right: 2px solid #ECECEC;" class="hide">
 			&nbsp;
 		</td>
 	</tr>
 	<tr>
-		<td width="600" height="20" colspan="3" style="font-size: 1px; line-height: 20px; border-left: 2px solid #efefef; border-right: 2px solid #efefef;" class="m480">
+		<td width="600" height="40" colspan="3" style="font-size: 1px; line-height: 40px; border-left: 2px solid #ECECEC; border-right: 2px solid #ECECEC;" class="m480">
 			&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td width="600" colspan="3" style="border-left: 2px solid #ECECEC; border-right: 2px solid #ECECEC;" class="m480-content">
+			<center><img src="../assets/img/report-sm.gif" width="400" height="200" border="0" style="display: block;" class="m480"></center>
 		</td>
 	</tr>
 </table>
